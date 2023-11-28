@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.TelaCadClienteController">
+   <children>
+      <Label alignment="CENTER" layoutX="325.0" layoutY="38.0" prefHeight="50.0" prefWidth="117.0" text="Troca" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="431.0" layoutY="38.0" prefHeight="50.0" prefWidth="82.0" text="Fácil" textAlignment="RIGHT" textFill="#2701ff">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="118.0" text="Informações Pessoais">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="531.0" layoutY="115.0" text="Informações de Endereço">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="170.0" prefHeight="30.0" prefWidth="59.0" text="CPF:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfCadCliCpf" layoutX="86.0" layoutY="170.0" prefHeight="30.0" prefWidth="211.0" promptText="Ex. 485.471.958/74">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfCadCliNome" layoutX="98.0" layoutY="221.0" promptText="Ex. Kauan Silva">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="24.0" layoutY="225.0" text="Nome:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfCadCliTel" layoutX="132.0" layoutY="274.0" prefHeight="30.0" prefWidth="211.0" promptText="Ex.  11 949938574">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfCadCliEmail" layoutX="98.0" layoutY="424.0" prefHeight="31.0" prefWidth="253.0" promptText="Ex. silva204@gmail.com.br">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="24.0" layoutY="278.0" text="Telefone:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCadCliSexo" layoutX="106.0" layoutY="323.0" prefHeight="30.0" prefWidth="165.0" promptText="Escolha o Sexo" />
+      <Label layoutX="24.0" layoutY="405.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="327.0" text="Sexo:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="378.0" text="Dt. Nascimento:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="428.0" text="Email:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="483.0" text="Senha:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="533.0" text="Confirmar Senha:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="tfCadCliSenha" layoutX="106.0" layoutY="482.0" prefHeight="25.0" prefWidth="149.0" promptText="Digite a Senha">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="tfCadCliConfSenha" layoutX="210.0" layoutY="532.0" prefHeight="31.0" prefWidth="195.0" promptText="Digite a Senha Novamente">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btnCadCliFinalizar" layoutX="334.0" layoutY="597.0" mnemonicParsing="false" onAction="#acaoCliente" prefHeight="50.0" prefWidth="176.0" text="Finalizar Cadastro">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="425.0" layoutY="169.0" prefHeight="30.0" prefWidth="67.0" text="Título:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfCadCliTitulo" layoutX="493.0" layoutY="169.0" prefHeight="30.0" prefWidth="211.0" promptText="Ex. Minha Casa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfCadCliCep" layoutX="482.0" layoutY="221.0" promptText="Ex. 05741-500">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="425.0" layoutY="225.0" prefHeight="23.0" prefWidth="54.0" text="CEP:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfCadCliLogradouro" layoutX="546.0" layoutY="270.0" prefHeight="31.0" prefWidth="286.0" promptText="Ex.  Rua Cantagalo">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfCadCliNumero" layoutX="510.0" layoutY="322.0" prefHeight="31.0" prefWidth="89.0" promptText="Ex. 485">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="423.0" layoutY="272.0" text="Logradouro:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="324.0" text="Número:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="422.0" layoutY="373.0" text="Complemento:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="419.0" text="Informações:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="taCadCliInfo" layoutX="559.0" layoutY="420.0" prefHeight="145.0" prefWidth="272.0" />
+      <TextField fx:id="tfCadCliComplemento" layoutX="567.0" layoutY="371.0" prefHeight="31.0" prefWidth="265.0" promptText="Ex.  Bloco C">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfCadCliData" layoutX="179.0" layoutY="376.0" prefHeight="30.0" prefWidth="211.0" promptText="Ex.  28/01/2012">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="821.0" layoutY="403.0" text="*" textFill="#ff1414">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="821.0" layoutY="354.0" text="*" textFill="#ff1414">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="657.0" text="* " textFill="#ff1414">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="659.0" text="Campos Opcionais">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCadCliVoltar" alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="40.0" mnemonicParsing="false" onAction="#acaoCliente" prefHeight="30.0" prefWidth="60.0" text="⬅" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

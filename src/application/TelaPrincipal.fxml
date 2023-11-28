@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.TelaPrincipalController">
+  <tabs>
+    <Tab text="Tela Principal">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="lbTrocaFacil" layoutX="313.0" layoutY="71.0" text="Troca">
+                     <font>
+                        <Font name="Arial Bold" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbTrocaFacil1" layoutX="407.0" layoutY="71.0" text="Fácil" textFill="#1a00ff">
+                     <font>
+                        <Font name="Arial Bold" size="35.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfPesquisar" layoutX="68.0" layoutY="166.0" prefHeight="35.0" prefWidth="562.0" promptText="Pesquisar">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnPesuisarProduto" layoutX="641.0" layoutY="166.0" mnemonicParsing="false" onAction="#acaoPrincipal" prefHeight="35.0" prefWidth="100.0" text="🔎">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnPrincipalMeuPerfil" layoutX="617.0" layoutY="38.0" mnemonicParsing="false" onAction="#acaoMeuPerfil" text="Meu Perfil ‍👤">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lbGrid1Produtos" layoutX="68.0" layoutY="240.0" prefHeight="133.0" prefWidth="190.0">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbGrid2Produtos" layoutX="305.0" layoutY="240.0" prefHeight="133.0" prefWidth="190.0">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbGrid3Produtos" layoutX="546.0" layoutY="240.0" prefHeight="133.0" prefWidth="190.0">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbGrid4Produtos" layoutX="68.0" layoutY="419.0" prefHeight="133.0" prefWidth="190.0">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbGrid5Produtos" layoutX="312.0" layoutY="419.0" prefHeight="133.0" prefWidth="190.0">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbGrid6Produtos" layoutX="546.0" layoutY="419.0" prefHeight="133.0" prefWidth="190.0">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnPrincipalAddCar1" layoutX="68.0" layoutY="379.0" mnemonicParsing="false" onAction="#acaoPrincipal" prefWidth="190.0" text="Adicionar ao Carrinho" />
+                  <Button fx:id="btnPrincipalAddCar2" layoutX="305.0" layoutY="379.0" mnemonicParsing="false" onAction="#acaoPrincipal" prefWidth="190.0" text="Adicionar ao Carrinho" />
+                  <Button fx:id="btnPrincipalAddCar3" layoutX="546.0" layoutY="379.0" mnemonicParsing="false" onAction="#acaoPrincipal" prefWidth="190.0" text="Adicionar ao Carrinho" />
+                  <Button fx:id="btnPrincipalAddCar4" layoutX="68.0" layoutY="560.0" mnemonicParsing="false" onAction="#acaoPrincipal" prefWidth="190.0" text="Adicionar ao Carrinho" />
+                  <Button fx:id="btnPrincipalAddCar5" layoutX="312.0" layoutY="560.0" mnemonicParsing="false" onAction="#acaoPrincipal" prefWidth="190.0" text="Adicionar ao Carrinho" />
+                  <Button fx:id="btnPrincipalAddCar6" layoutX="546.0" layoutY="560.0" mnemonicParsing="false" onAction="#acaoPrincipal" prefWidth="190.0" text="Adicionar ao Carrinho" />
+                  <Button fx:id="btnRecomendaProduto" layoutX="47.0" layoutY="42.0" mnemonicParsing="false" onAction="#acaoPrincipal" text="Recomenda Novos Produtos">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Carrinho">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="63.0" layoutX="477.0" layoutY="202.0" stroke="BLACK" strokeType="INSIDE" width="296.0" />
+                  <Label fx:id="lbCarrinho" layoutX="56.0" layoutY="50.0" text="Carrinho">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane layoutX="48.0" layoutY="117.0">
+                     <content>
+                        <TextArea fx:id="taListaCarrinho" prefHeight="471.0" prefWidth="400.0">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </TextArea>
+                     </content>
+                  </ScrollPane>
+                  <Label layoutX="479.0" layoutY="150.0" text="Sub Total:">
+                     <font>
+                        <Font name="Arial Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="485.0" layoutY="220.0" text="R$">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbCarrinhoSubTotal" layoutX="524.0" layoutY="220.0">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnCarrinhoFinalizar" layoutX="539.0" layoutY="335.0" mnemonicParsing="false" onAction="#acaoCarrinho" prefHeight="39.0" prefWidth="173.0" text="Finalizar Pedido">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ColorAdjust saturation="-1.0" />
+                     </effect>
+                  </Button>
+                  <Button layoutX="539.0" layoutY="280.0" mnemonicParsing="false" onAction="#acaoCarrinho" prefHeight="39.0" prefWidth="173.0" text="Calcular Sub Total">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLimpaCarrinho" layoutX="459.0" layoutY="564.0" mnemonicParsing="false" onAction="#acaoCarrinho" prefHeight="26.0" prefWidth="144.0" text="Limpar Carrinho ❌">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font></Button>
+                  <Label layoutX="263.0" layoutY="42.0" prefHeight="67.0" prefWidth="72.0" text="🛒" textFill="#1a00ff">
+                     <font>
+                        <Font name="System Bold" size="59.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
